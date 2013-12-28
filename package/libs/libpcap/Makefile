@@ -54,6 +54,7 @@ CONFIGURE_ARGS += \
 	--enable-shared \
 	--enable-static \
 	--disable-yydebug \
+	--enable-ipv6 \
 	--with-build-cc="$(HOSTCC)" \
 	--with-pcap=linux \
 	--without-septel \

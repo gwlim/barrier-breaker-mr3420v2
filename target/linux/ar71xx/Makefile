@@ -10,7 +10,7 @@ ARCH:=mips
 BOARD:=ar71xx
 BOARDNAME:=Atheros AR7xxx/AR9xxx
 FEATURES:=mips16
-CPU_TYPE=34kc
+CPU_TYPE=24kc
 SUBTARGETS:=generic nand mikrotik
 
 LINUX_VERSION:=3.10.24
@@ -20,6 +20,6 @@ include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \
 	kmod-leds-gpio kmod-gpio-button-hotplug swconfig \
 	kmod-ledtrig-default-on kmod-ledtrig-timer kmod-ledtrig-netdev \
-	kmod-ath9k wpad-mini uboot-envtools
+	kmod-ath9k wpad
 
 $(eval $(call BuildTarget))

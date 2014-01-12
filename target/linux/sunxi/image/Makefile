@@ -8,7 +8,9 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/image.mk
 
 BOARDS:= \
+	sun4i-a10-pcduino \
 	sun4i-a10-cubieboard \
+	sun4i-a10-olinuxino-lime \
 	sun5i-a13-olinuxino \
 	sun7i-a20-olinuxino-micro \
 	sun7i-a20-cubieboard2

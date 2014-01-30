@@ -13,7 +13,7 @@ FEATURES:=
 CPU_TYPE=24kc
 SUBTARGETS:=generic nand mikrotik
 
-LINUX_VERSION:=3.10.26
+LINUX_VERSION:=3.10.28
 
 include $(INCLUDE_DIR)/target.mk
 

@@ -9,11 +9,11 @@ include $(TOPDIR)/rules.mk
 ARCH:=arm
 BOARD:=omap
 BOARDNAME:=TI OMAP3/4/AM33xx
-FEATURES:=usb usbgadget ext4 targz fpu audio display
+FEATURES:=usb usbgadget ext4 targz fpu audio display ubifs
 CPU_TYPE:=cortex-a9
 CPU_SUBTYPE:=vfpv3
 
-LINUX_VERSION:=3.12.5
+LINUX_VERSION:=3.13.1
 
 MAINTAINER:=Imre Kaloz <kaloz@openwrt.org>
 

@@ -7,8 +7,14 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/image.mk
 
+UBIFS_OPTS = -F -m 2048 -e 124KiB -c 4096 -U
+UBI_OPTS = -m 2048 -p 128KiB -s 512 -O 2048
+
 define Image/BuildKernel
-	cp $(KDIR)/zImage $(BIN_DIR)/openwrt-$(BOARD)-zImage
+	$(CP) $(KDIR)/zImage $(BIN_DIR)/openwrt-$(BOARD)-zImage
+ ifneq ($(CONFIG_TARGET_ROOTFS_INITRAMFS),)
+	$(CP) $(KDIR)/zImage-initramfs $(BIN_DIR)/openwrt-$(BOARD)-zImage-initramfs
+ endif
 	-mkdir $(BIN_DIR)/dtbs
 	-$(CP) $(LINUX_DIR)/arch/arm/boot/dts/am335x*.dtb $(BIN_DIR)/dtbs/
 	-$(CP) $(LINUX_DIR)/arch/arm/boot/dts/omap3*.dtb $(BIN_DIR)/dtbs/

@@ -208,7 +208,7 @@ ifeq ($(DUMP),1)
     else
       CPU_TYPE ?= mips32
     endif
-    CPU_CFLAGS += -mno-branch-likely
+    CPU_CFLAGS += -mno-branch-likely -fno-caller-saves -mno-mips16 -mplt
     CPU_CFLAGS_mips32 = -mips32 -mtune=mips32
     CPU_CFLAGS_mips32r2 = -mips32r2 -mtune=mips32r2
     CPU_CFLAGS_mips64 = -mips64 -mtune=mips64 -mabi=64

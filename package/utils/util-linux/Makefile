@@ -33,12 +33,7 @@ endef
 CONFIGURE_ARGS += \
 	--enable-new-mount	\
 	--with-ncurses		\
-<<<<<<< HEAD
-	--disable-nls		\
 	--disable-pg-bell	\
-=======
-	--disable-tls		\
->>>>>>> upstream/master
 	--without-udev
 
 TARGET_CFLAGS += $(FPIC)

@@ -6,7 +6,9 @@ GCC_CONFIGURE += \
 	--with-headers=$(TOOLCHAIN_DIR)/include \
 	--enable-languages=$(TARGET_LANGUAGES) \
 	--enable-shared \
-	--enable-threads \
+	--enable-threads=posix \
+	--enable-tls \
+	--with-mips-plt \
 	--with-slibdir=$(TOOLCHAIN_DIR)/lib
 
 ifneq ($(CONFIG_GCC_VERSION_4_5)$(CONFIG_GCC_VERSION_4_6),)

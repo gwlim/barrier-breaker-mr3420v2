@@ -1,5 +1,5 @@
-src-git packages http://git.openwrt.org/packages.git
-src-git luci http://git.openwrt.org/project/luci.git
+src-git packages https://github.com/gwlim/package.git
+src-git luci https://github.com/gwlim/luci.git
 src-git routing https://github.com/openwrt-routing/packages.git
 src-git telephony http://git.openwrt.org/feed/telephony.git
 #src-svn xwrt http://x-wrt.googlecode.com/svn/trunk/package

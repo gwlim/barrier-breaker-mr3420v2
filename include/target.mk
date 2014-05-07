@@ -208,11 +208,11 @@ ifeq ($(DUMP),1)
     else
       CPU_TYPE ?= mips32
     endif
-    CPU_CFLAGS += -fno-caller-saves -mno-mips16 -mno-branch-likely -mplt -msym32 -mno-long-calls -fomit-frame-pointer
+    CPU_CFLAGS += -fno-caller-saves -mno-branch-likely -mno-long-calls -fomit-frame-pointer
     CPU_CFLAGS_mips32 = -mips32 -mtune=mips32
     CPU_CFLAGS_mips32r2 = -mips32r2 -mtune=mips32r2
     CPU_CFLAGS_mips64 = -mips64 -mtune=mips64 -mabi=64
-    CPU_CFLAGS_24kc = -march=24kc
+    CPU_CFLAGS_24kc = -mips32r2 -mtune=24kc -mno-mips16 -mplt -msym32 -mgp32
     CPU_CFLAGS_24kec = -march=24kec
     CPU_CFLAGS_34kc = -march=34kc
     CPU_CFLAGS_74kc = -march=74kc

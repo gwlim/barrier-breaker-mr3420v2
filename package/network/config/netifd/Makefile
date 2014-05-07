@@ -34,7 +34,7 @@ TARGET_CFLAGS += \
 
 CMAKE_OPTIONS += \
 	-DLIBNL_LIBS=-lnl-tiny \
-	-DDEBUG=1
+	-DDEBUG=0
 
 define Package/netifd/install
 	$(INSTALL_DIR) $(1)/sbin

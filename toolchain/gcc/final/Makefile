@@ -7,8 +7,10 @@ GCC_CONFIGURE += \
 	--enable-languages=$(TARGET_LANGUAGES) \
 	--enable-shared \
 	--enable-threads=posix \
+	--enable-lto \
 	--enable-tls \
 	--with-mips-plt \
+	--disable-nls \
 	--with-slibdir=$(TOOLCHAIN_DIR)/lib
 
 ifneq ($(CONFIG_GCC_VERSION_4_5)$(CONFIG_GCC_VERSION_4_6),)

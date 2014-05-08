@@ -106,8 +106,6 @@ define Package/uhttpd/conffiles
 /etc/uhttpd.key
 endef
 
-TARGET_CFLAGS += -mexplicit-relocs
-
 TARGET_LDFLAGS += -lcrypt
 
 CMAKE_OPTIONS = -DTLS_SUPPORT=on

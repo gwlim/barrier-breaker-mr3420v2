@@ -13,9 +13,9 @@ PKG_VERSION:=$(strip $(subst ",, $(CONFIG_BINUTILS_VERSION)))
 PKG_RELEASE:=6
 
 ifeq ($(findstring linaro, $(CONFIG_BINUTILS_VERSION)),linaro)
-  PKG_SOURCE_URL:=https://releases.linaro.org/13.12/components/toolchain/binutils-linaro/
-  PKG_REV:=2.24-2013.12
-  PKG_SOURCE:=$(PKG_NAME)-linaro-$(PKG_REV).tar.xz
+  PKG_SOURCE_URL:=https://releases.linaro.org/14.05/components/toolchain/binutils-linaro/
+  PKG_REV:=2.24.0-2014.05
+  PKG_SOURCE:=$(PKG_NAME)-linaro-$(PKG_REV).tar.bz2
   BINUTILS_DIR:=$(PKG_NAME)-linaro-$(PKG_REV)
   PKG_BUILD_DIR:=$(BUILD_DIR_TOOLCHAIN)/$(BINUTILS_DIR)
   PKG_VERSION:=$(PKG_REV)

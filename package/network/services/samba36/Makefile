@@ -92,6 +92,11 @@ CONFIGURE_ARGS += \
 	--disable-relro \
 	--disable-static \
 	--disable-swat \
+	--disable-fam \
+	--disable-external-libtevent \
+	--disable-external-libtalloc \
+	--disable-external-libtdb \
+	--disable-smbtorture4 \
 	--disable-shared-libs \
 	--with-codepagedir=/etc/samba \
 	--with-configdir=/etc/samba \
@@ -103,11 +108,15 @@ CONFIGURE_ARGS += \
 	--with-piddir=/var/run \
 	--with-privatedir=/etc/samba \
 	--with-sendfile-support \
+	--with-aio-support \
 	--without-cluster-support \
 	--without-ads \
 	--without-krb5 \
 	--without-ldap \
 	--without-pam \
+	--without-pam_smbpass \
+	--without-dnsupdate \
+	--without-dmapi \
 	--without-winbind \
 	--without-libtdb \
 	--without-libtalloc \

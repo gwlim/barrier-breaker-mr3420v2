@@ -110,6 +110,7 @@ TARGET_CFLAGS += $(FPIC)
 CONFIGURE_ARGS += \
 	--enable-shared \
 	--enable-static \
+	--enable-thread-support \
 	--disable-debug-mode
 
 MAKE_FLAGS += \

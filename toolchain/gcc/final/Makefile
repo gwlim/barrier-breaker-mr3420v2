@@ -7,7 +7,6 @@ GCC_CONFIGURE += \
 	--enable-languages=$(TARGET_LANGUAGES) \
 	--enable-shared \
 	--enable-threads=posix \
-	--enable-lto \
 	--enable-tls \
 	--with-mips-plt \
 	--disable-nls \

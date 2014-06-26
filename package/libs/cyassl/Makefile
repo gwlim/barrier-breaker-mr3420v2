@@ -38,7 +38,6 @@ TARGET_CFLAGS += $(FPIC)
 
 CONFIGURE_ARGS += \
 	--without-zlib \
-	--enable-singlethreaded \
 	--disable-examples
 
 define Build/InstallDev

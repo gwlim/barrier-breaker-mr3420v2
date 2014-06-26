@@ -35,7 +35,6 @@ CONFIGURE_ARGS += \
 	--with-ncurses		\
 	--disable-nls		\
 	--disable-pg-bell	\
-	--disable-tls		\
 	--disable-sulogin	\
 	--without-udev
 
